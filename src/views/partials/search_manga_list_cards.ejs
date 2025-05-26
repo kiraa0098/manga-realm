@@ -1,0 +1,30 @@
+<head>
+  <link rel="stylesheet" href="/styles/partials/mang_search_list_cards.css" />
+</head>
+
+<h1>Manga</h1>
+
+<% if (results && results.length > 0) { %>
+
+<div class="search-results-cards">
+  <% results.forEach(manga => { %>
+  <div class="manga-card">
+    <a href="/manga/<%= manga.id %>">
+      <img
+        class="manga-card-img"
+        src="<%= manga.cover_url %>"
+        alt="<%= manga.title.en || 'Manga Cover' %>"
+      />
+      <div class="manga-card-title">
+        <%= manga.title.en || "No English Title" %>
+      </div>
+    </a>
+  </div>
+  <% }) %>
+</div>
+
+<% } else { %>
+
+<p>No results found.</p>
+
+<% } %>

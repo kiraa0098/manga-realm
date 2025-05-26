@@ -1,0 +1,113 @@
+@import url("_global.css");
+
+/* Base Styles */
+.main-content {
+  max-width: 1100px;
+  margin: 5rem auto;
+  padding: 5rem;
+  background-image: linear-gradient(
+      to right,
+      rgba(18, 18, 18, 1) 0%,
+      rgba(18, 18, 18, 0.85) 50%,
+      rgba(18, 18, 18, 0.5) 60%,
+      rgba(18, 18, 18, 0.1) 70%,
+      rgba(18, 18, 18, 0) 100%
+    ),
+    url("/assets/imgs/landing_page_main_content_background_img.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: left;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.075) 0px 2px 4px 0px;
+  color: var(--font-color);
+}
+
+.main-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.highlight-red {
+  color: var(--primary-color);
+}
+
+.highlight-blue {
+  color: var(--secondary-color);
+}
+
+.main-content button {
+  background: var(--primary-color);
+  color: var(--primary-font-color);
+  border-radius: 8px;
+  padding: 14px 30px 16px;
+  font-size: 18px;
+  font-weight: 700;
+  transition: transform 200ms, background 200ms;
+  border: none;
+  cursor: pointer;
+}
+
+.main-content button:hover {
+  transform: translateY(-2px);
+}
+
+.information-about-website {
+  max-width: 1000px;
+  margin: 4rem auto;
+  padding: 0 1rem;
+  text-align: justify;
+  line-height: 1.8;
+}
+
+.information-about-website h2 {
+  margin-top: 3rem;
+  margin-bottom: 0.7rem;
+}
+
+.information-about-website p {
+  margin-bottom: 2rem;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 1024px) {
+  .main-content {
+    padding: 4rem 2rem;
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    padding: 3rem 1.5rem;
+  }
+  .main-content h1 {
+    font-size: 2.5rem;
+  }
+  .main-content button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+  }
+  .information-about-website {
+    padding: 0 1rem;
+    margin: 3rem auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-content {
+    padding: 2rem 1rem;
+  }
+  .main-content h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  .main-content button {
+    font-size: 15px;
+  }
+  .information-about-website {
+    padding: 0 0.5rem;
+    margin: 2rem auto;
+  }
+}

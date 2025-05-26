@@ -9,3 +9,5 @@ Built to provide a distraction-free manga reading experience with fast search an
 - **Templating Engine:** EJS
 - **Language:** TypeScript
 - **Data Source:** MangaDex API
+
+not done, post poned T.T idk why
